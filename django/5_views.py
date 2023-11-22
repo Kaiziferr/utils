@@ -13,6 +13,7 @@ class <name_of_class>(TemplateView):
 class ListAllEmpleados(ListView):
     """Listar todos los empleados de una empresa"""
     template_name = 'empleado/list_empleados.html'
+    paginate_by ) 4 # Permite la paginaciòn en bloque
     model = Empleado
     context_object_name = 'lista_empleados'
 
