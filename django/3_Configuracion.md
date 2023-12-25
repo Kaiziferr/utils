@@ -1,9 +1,13 @@
 # Configuracion
 ---
 
-1. Crear una carpeta de configuración
-2. Crear un archivo base.py configuraciones basicas en comun de todos los entornos.
 
+
+1. Create settings folder in the main folder
+2. Create the workflow environment config files, for example base, deploy, development, test, ...
+3. Include in the files of settings the code lines necessary to execute the project in the new setting from the file original
+
+   
     - BASE_DIR
     - SECRET_KEY
     - INSTALLED_APPS
@@ -18,7 +22,6 @@
     - USE_TZ
     - DEFAULT_AUTO_FIELD
 
-3. Crear un archivo llamado local.py => Configuración local
 
     - DEBUG
     - ALLOWED_HOSTS
