@@ -2,25 +2,25 @@
 ---
 
 ## Inicializar el proyecto
-Crea un proyecto
+Create a nwe project
 ```sh
 django-admin startproject <name_project>
 ```
 
 ## Help
-Menú de ayuda
+Help menu
 ```sh
 python manage.py help
 ```
 
 ## Runserver
-Ejecuta el servidor
+Run server
 ```sh
 python manage.py runserver
 ```
 
 ### Runserver other settings new file
-Trabajar con una nueva ruta de configuraciones
+Run server with other  setting file
 ```sh
 - python manage.py runserver --settings=<path>
 
