@@ -42,8 +42,8 @@ def main():
 
 # Aplicaciones
 ---
-6. (Opcional) Crear una carpeta donde se guardaran las aplicaciones **applications**.
-7. Cuando se crea un app se debe configurar en el archivo **app.py** de la app, anexando la anexando el nombre del folder que contiene las apps.
+6. (Opcional) Create a folder where is have save the **apps**.
+7. When is create an app is must configure the file app, add the name of folder the apps.
   
 ```py
 # name = <folder apps>.aplication creado.
