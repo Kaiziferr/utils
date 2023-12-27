@@ -6,27 +6,25 @@
 1. Create settings folder in the main folder
 2. Create the workflow environment config files, for example base, deploy, development, test, ...
 3. Include in the files of settings the code lines necessary to execute the project in the new setting from the file original
-
-   
-    - BASE_DIR
-    - SECRET_KEY
-    - INSTALLED_APPS
-    - MIDDLEWARE
-    - ROOT_URLCONF
-    - TEMPLATES
-    - WSGI_APPLICATION
-    - AUTH_PASSWORD_VALIDATORS
-    - LANGUAGE_CODE     (Puede que dependiendo del programador, se trabaje con otras configuraciones de idiomas y zona horaria)
-    - TIME_ZONE     
-    - USE_I12N
-    - USE_TZ
-    - DEFAULT_AUTO_FIELD
-
-
-    - DEBUG
-    - ALLOWED_HOSTS
-    - DATABASE
-    - STATIC_URL
+   - **Base (base file   settings)**
+       - BASE_DIR
+       - SECRET_KEY
+       - INSTALLED_APPS
+       - MIDDLEWARE
+       - ROOT_URLCONF
+       - TEMPLATES
+       - WSGI_APPLICATION
+       - AUTH_PASSWORD_VALIDATORS
+       - LANGUAGE_CODE     (Puede que dependiendo del programador, se trabaje con otras configuraciones de idiomas y zona horaria)
+       - TIME_ZONE     
+       - USE_I12N
+       - USE_TZ
+       - DEFAULT_AUTO_FIELD
+   - **Development File**
+       - DEBUG
+       - ALLOWED_HOSTS
+       - DATABASE
+       - STATIC_URL
 
 4. Crear un archivo llamado prod.py => Configuración producción
 5. En el archivo manage.py se modifica la ruta de ejecución del archivo de configuración 
