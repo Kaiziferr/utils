@@ -25,9 +25,9 @@
        - ALLOWED_HOSTS
        - DATABASE
        - STATIC_URL
+    - **Deployment File**
 
-4. Crear un archivo llamado prod.py => Configuración producción
-5. En el archivo manage.py se modifica la ruta de ejecución del archivo de configuración 
+5. In the file manage.py is modified the run path of config file
 
 ```py
 def main():
@@ -38,6 +38,8 @@ def main():
   """Run administrative tasks."""
   os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'employees.settings.local')
 ```
+
+
 # Aplicaciones
 ---
 6. (Opcional) Crear una carpeta donde se guardaran las aplicaciones **applications**.
