@@ -48,6 +48,7 @@ python manage.py migrate
 
 **Migrate for an app**
 ```sh
+ python manage.py makemigrations home
  python manage.py migrate home
 ```
 
