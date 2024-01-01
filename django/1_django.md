@@ -46,6 +46,12 @@ Una vez detectado los cambios, se realiza la migraciòn, para crear el modelo
 python manage.py migrate
 ```
 
+**Migrate for an app**
+```sh
+ python manage.py migrate home
+```
+
+
 ## Admin
 ### Create root
 Permite crear un super usuario, para acceder al administrador
