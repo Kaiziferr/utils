@@ -6,7 +6,7 @@ from django.views.generic import TemplateView
 
 class <name_of_class>(TemplateView):
     
-    template_name = '<name_of_template>' -- Indica donde esta el template.
+    template_name = '<path_template>' -- Path template
 ```
 
 
