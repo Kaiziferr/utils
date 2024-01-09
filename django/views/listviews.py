@@ -34,3 +34,16 @@ class ListByAreaEmpleados(ListView):
 ```
 # In url path('listar_empleado_area/<short_name>', views.ListByAreaEmpleados.as_view())
 
+```py
+class ListEmpleadosByKword(ListView):
+  """Listar empleado por kward"""
+    template_name = 'empleado/by_kword.html'
+    context_object_name = 'lista_empleados'
+
+    def get_queryset(self) -> QuerySet[Any]:
+        kword = self.request.GET.get('kword', '')
+        queryset = Empleado.objects.filter(
+            first_name = kword
+        )
+        return queryset
+```
