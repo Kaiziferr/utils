@@ -20,3 +20,17 @@ class ListAllEmpleados(ListView):
 
 # Paginacion
 # http://localhost:8000/listar-empleados/?page=2
+
+```py
+class ListByAreaEmpleados(ListView):
+    """Listar empleados de la empresa de un area"""
+    template_name = 'empleado/listar_empleado_area.html'
+    def get_queryset(self) -> QuerySet[Any]:
+        short_name = self.kwargs['short_name']
+        queryset = Empleado.objects.filter(
+            department__short_name = short_name
+        )
+        return queryset
+```
+# In url path('listar_empleado_area/<short_name>', views.ListByAreaEmpleados.as_view())
+
