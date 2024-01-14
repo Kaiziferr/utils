@@ -47,3 +47,16 @@ class ListEmpleadosByKword(ListView):
         )
         return queryset
 ```
+```py
+class ListarHabilidadesEmpleado(ListView):
+    template_name = 'empleado/listar_skill_empleado.html'
+    context_object_name = 'listar_habilidades'
+
+    def get_queryset(self) -> QuerySet[Any]:
+        kword =  self.request.GET.get('kword', '')
+        empleado = Empleado.objects.get(id=kword)
+        skills = empleado.skills.all()
+        return skills
+
+```
+
