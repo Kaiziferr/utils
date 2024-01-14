@@ -6,3 +6,4 @@ class EmpleadoDetailView(DetailView):
         context = super(EmpleadoDetailView, self).get_context_data(**kwargs)
         context['title'] = 'Employee of the Month'
         return context
+# path('ver-empleado/<pk>', views.EmpleadoDetailView.as_view())
