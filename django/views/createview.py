@@ -6,3 +6,4 @@ class RegistroEmpleado(CreateView):
     fields = ('__all__')
     success_url = '.' # recharge the same page
     
+# Template {{form.as_p}}
