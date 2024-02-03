@@ -11,3 +11,12 @@ venv\Scripts\activate.bat
 ```
 venv\Scripts\deactivate.bat
 ```
+
+- List Libraries
+```
+pip list
+```
+- Export Libraries
+```
+pip freeze
+```
