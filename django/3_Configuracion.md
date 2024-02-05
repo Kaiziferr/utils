@@ -123,3 +123,27 @@ Solo tendra en cuenta los cambios de las apps que esten instaladas en INSTALLED_
 - migrations
     - 0001_initial.py 
 
+# Static Files
+---
+Configuracion de archivos estaticos (normalmente desde la base local)
+```py
+STATIC_URL = 'static/' 
+STATICFILES_DIRS = [os.path.join(BASE_DIR ,'static')]
+```
+En el archivo html:
+```html
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'prueba.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="ejemplo1">Hello everybody</h1>
+    <h1 class="ejemplo2">Hello everybody</h1>
+</body>
+</html>
+```
+
