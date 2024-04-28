@@ -62,3 +62,46 @@ const {name: nameCustomers, address: {street}} = customers //Rename variable
 console.log(name)
 console.log(nameCustomers)
 console.log(street)
+
+
+// Merge of two or more objects
+
+const product = {
+    name: 'PC',
+    price: 300,
+    availability: false
+}
+
+const customers = {
+    name: 'Juan',
+    premium: true,
+    address: {
+        street: "Calle 4"
+    }
+}
+
+const carrito = {
+    count: 1,
+    ...product
+}
+
+//console.log(carrito)
+
+const newObject = {
+    producto: {...product},
+    cliente: {...carrito}
+}
+
+//console.log(newObject)
+
+
+const newObject2 = {
+    ...product,
+    ...customers
+
+}
+
+//console.log(newObject2)
+
+const newObject3 = Object.assign(product, customers)
+console.log(newObject3)
