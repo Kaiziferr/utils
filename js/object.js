@@ -38,3 +38,27 @@ console.log(pets)
 delete pets.lastname
 
 console.log(pets)
+
+//merge two objects
+// Destructuring of two or more objects
+
+const product = {
+    name: 'PC',
+    price: 300,
+    availability: false
+}
+
+const customers = {
+    name: 'Juan',
+    premium: true,
+    address: {
+        street: "Calle 4"
+    }
+}
+
+const {name} = product
+const {name: nameCustomers, address: {street}} = customers //Rename variable
+
+console.log(name)
+console.log(nameCustomers)
+console.log(street)
