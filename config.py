@@ -1,5 +1,6 @@
 sns.set(style="darkgrid")
 pd.set_option('display.float_format', '{:,.2f}'.format)
 title_data = 'Materiales extraidos en Colombia'
-warnings.filterwarnings("ignore")
+paleta = sns.color_palette('Set2').as_hex()
 random_seed=73
+np.set_printoptions(precision=3, suppress=True)
