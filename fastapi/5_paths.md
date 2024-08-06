@@ -10,6 +10,7 @@
 3. get one element
 ```
   @app.get('elements/{id_element}')
+  def metodo(id_elemetn):
 ```
 
 # POST
