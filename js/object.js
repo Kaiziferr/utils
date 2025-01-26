@@ -1,28 +1,43 @@
-const producto = {
-    name: "Fruit",
-    price: 500,
-    disponibilidad: false
+const product = {
+    name: "Tablet",
+    price: 300,
+    available: false
 }
 
-console.log(typeof producto)
-console.table(producto)
-console.log(producto.name)
-console.log(producto.price)
-console.log(producto.disponibilidad)
+console.log(product)
+console.table(product)
+console.log(typeof product)
+console.log(product.name)
+console.log(product.price)
+console.log(product.available)
 
 //Destructuring
-
 const {name, price} = producto
 console.log(name, price)
 
+//Asignation
+const name = "Justin"
+const age = 12
 const pets = {
-    name: "Justin",
-    lastname: "Tovar",
-    age: 7
+    name,
+    age
 }
 
-//Object.freeze(pets) //No permite modificar el objeto
-Object.seal(pets) //Permite modificarlo, pero no eliminar o agregar new properties
+console.log(pets)
+
+//Modification
+product.price = 500
+product.image = 'image.jpg'
+console.log(product)
+
+//Remove
+delete product.image
+console.log(product)
+
+
+//
+Object.freeze(pets) //No permite modificar el objeto
+Object.seal(pets) //Permite modificar las propiedades existentes, pero no eliminar o agregar nuevas propiedades
 console.log(pets)
 
 // set
