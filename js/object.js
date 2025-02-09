@@ -3,7 +3,14 @@
 const product = {
     name: "Tablet",
     price: 300,
-    available: false
+    available: false,
+    address:{
+      street: "Calle Colombia",
+    },
+    fullInformation(){
+      return `${this.name} ${this.price} ${this.available}`
+    }
+  
 }
 
 console.log(product)
@@ -14,7 +21,7 @@ console.log(product.price)
 console.log(product.available)
 --- 
 //Destructuring
-const {name, price} = producto
+const {name, price} = product
 console.log(name, price)
 --- 
 //Asignation
