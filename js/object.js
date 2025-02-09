@@ -1,3 +1,5 @@
+---
+//Object
 const product = {
     name: "Tablet",
     price: 300,
@@ -10,49 +12,44 @@ console.log(typeof product)
 console.log(product.name)
 console.log(product.price)
 console.log(product.available)
-
+--- 
 //Destructuring
 const {name, price} = producto
 console.log(name, price)
-
+--- 
 //Asignation
 const name = "Justin"
 const age = 12
+
 const pets = {
-    name,
-    age
+  name,
+  age,
+  fullInformation(){
+    return  `${this.name} ${this.age}`
+  }
 }
 
+console.log(pets.fullInformation())
+---
+//Modification
+pets.image = 'image.jpg'
+console.log(pets)
+---
+//Remove
+delete pets.image
+console.log(pets)
+// set
+pets.name = "Violeta"
 console.log(pets)
 
-//Modification
-product.price = 500
-product.image = 'image.jpg'
-console.log(product)
-
-//Remove
-delete product.image
-console.log(product)
 
 
-//
+
+// utils
 Object.freeze(pets) //No permite modificar el objeto
 Object.seal(pets) //Permite modificar las propiedades existentes, pero no eliminar o agregar nuevas propiedades
 console.log(pets)
 
-// set
-pets.name = "Violeta"
-console.log(pets)
-pets.image = "violeta.jpg"
-console.log(pets)
-
-//Delete
-
-
-
-delete pets.lastname
-
-console.log(pets)
 
 //merge two objects
 // Destructuring of two or more objects
